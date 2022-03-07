@@ -21,7 +21,7 @@ body {
 
 .img-container {
   padding: 9rem;
-  background-image: url(/assets/pattern-bg.png);
+  background-image: url(./assets/pattern-bg.png);
   background-size: cover;
   background-position: center;
 }
