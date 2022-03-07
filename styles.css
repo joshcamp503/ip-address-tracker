@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.img-container {
+  padding: 9rem;
+  background-image: url("/images/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#map {
+  margin-top: 0;
+  height: 650px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h2 {
+  margin: 2rem auto;
+  letter-spacing: 0.05ch;
+  color: hsl(0, 0%, 92%)
+}
+
+.content form {
+  /* margin-bottom: 1.5rem; */
+  width: clamp(200px, 95%, 350px);
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.content form input {
+  flex: 5;
+  padding: 1.25rem;
+  border: none;
+}
+
+.content form button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: black;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.info-container {
+  width: clamp(300px, 95%, 500px);
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.info-chunk {
+  margin: 1.5rem;
+}
+
+.info-chunk h6 {
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.info-chunk span {
+  color: hsl(0, 0%, 17%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .content h2 {
+    font-size: 2em;
+    margin: 3rem auto;
+  }
+
+  .content form {
+    margin-bottom: 0;
+    width: clamp(300px, 50%, 500px);
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    text-align: left;
+    width: 70%;
+  }
+
+  .info-chunk {
+    margin: auto;
+    padding: 1.5rem;
+    padding-right: 2rem; 
+    position: relative;
+  }
+
+  .info-chunk:after {
+    content: "";
+    background: hsl(0, 0%, 85%);
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 50%;
+    width: 1px;
+  }
+
+  .info-chunk:first-child:after {
+    display: none;
+  }
+
+}
