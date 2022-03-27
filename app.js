@@ -85,3 +85,11 @@ const handleError = (err) => {
 getIPData()
   .then(data => updateDOM(data))
   .catch(err => handleError(err))
+
+// HANDLE MODAL
+const modal = document.querySelector('.modal')
+const closeBtn = document.querySelector('.close')
+const infoBtn = document.querySelector('#info-btn')
+
+closeBtn.addEventListener('click', () => {modal.classList.toggle('hidden')})
+infoBtn.addEventListener('click', () => {modal.classList.toggle('hidden')})

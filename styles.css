@@ -83,6 +83,14 @@ body {
   margin-top: 1.5rem;
 }
 
+.content h2 img {
+  cursor: pointer;
+  height: 18px;
+  margin-left: 1rem;
+  opacity: 0.8;
+  width: 18px;
+}
+
 .info-chunk {
   margin: 1.5rem;
 }
@@ -100,6 +108,48 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+}
+
+.modal {
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+    justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+    flex-direction: column;
+  height: fit-content;
+  margin-top: 2rem;
+  padding: 2rem;
+  padding-top: 2rem;
+  text-align: left;
+  width: clamp(300px, 95%, 500px);
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+}
+
+.modal-content span {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.modal.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
