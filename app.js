@@ -90,6 +90,8 @@ getIPData()
 const modal = document.querySelector('.modal')
 const closeBtn = document.querySelector('.close')
 const infoBtn = document.querySelector('#info-btn')
+const actionBtn = document.querySelector('#call-to-action')
 
 closeBtn.addEventListener('click', () => {modal.classList.toggle('hidden')})
 infoBtn.addEventListener('click', () => {modal.classList.toggle('hidden')})
+actionBtn.addEventListener('click', () => {modal.classList.toggle('hidden')})

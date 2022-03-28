@@ -130,8 +130,8 @@ body {
     flex-direction: column;
   height: fit-content;
   margin-top: 2rem;
-  padding: 2rem;
-  padding-top: 2rem;
+  padding: 3rem 2rem;
+  padding-bottom: 4rem;
   text-align: left;
   width: clamp(300px, 95%, 500px);
 }
@@ -146,6 +146,15 @@ body {
   font-size: 14px;
   margin-bottom: 1rem;
   opacity: 0.5;
+}
+
+.modal-content p {
+  margin: 0.3rem 0;
+}
+
+.modal-content #call-to-action {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .modal.hidden {
