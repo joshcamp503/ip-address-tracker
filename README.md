@@ -1,4 +1,49 @@
-# Frontend Mentor - IP address tracker
+# IP Locator
+
+An application for geolocating IP addresses
+
+## About
+
+This app provides an interface for people to search for any IP address or domain and see their location and key information. It was built using the IPify API, Leaflet.js, Javascript, HTML, and CSS.
+
+This project is my solution to a challenge from frontendmentor.io, an online collection of coding challenges for developers to test and hone their skills with HTML, CSS, Javascript, and any framework(s) they choose to work with. Scroll down to see the README from frontendmentor.io to learn more about what the goals and expectations were for this challenge.
+
+## Project Screen Shot(s)
+
+[](assets/ip-locator-preview.png)
+<img src="assets/ip-locator-preview.png" alt="screenshot" height="300" width="400">
+
+## Live Demo
+
+https://joshcamp.dev/ip-locator
+
+
+### Dependencies
+
+*Leaflet.js
+
+## Authors
+
+Josh Campanella  
+[Portfolio](https://joshcamp.dev)
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [frontendmentor.io](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
+* [Leaflet.js](https://leafletjs.com/)
+* [IPify](https://www.ipify.org/)
+
+
+
+# README for this project directly from Frontend Mentor
+
+## Frontend Mentor - IP address tracker
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
